@@ -1,0 +1,9 @@
+.nav-tabs li {
+   list-style: none;
+   float: left;
+   margin-left: 2%;
+}
+
+.active a{
+    color: orange;
+}

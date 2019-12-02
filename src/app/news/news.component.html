@@ -1,0 +1,10 @@
+
+ 
+   <h3>News List</h3>
+
+
+   <ul class="list-group">
+    
+        <li class="list-group-item" *ngFor="let n of news | paginate: { itemsPerPage: 10, currentPage: p }"><h4>{{ n.id }}. {{ n.title }}</h4>{{ n.body }}</li>
+      </ul>
+        <pagination-controls num-pages="noOfPages" current-page="currentPage" (pageChange)="p = $event" class="pagination-small"></pagination-controls>
